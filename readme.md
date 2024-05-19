@@ -7,7 +7,7 @@
 - Watch videos
 
 ### Technologies used:
-- FFmpeg
+- [FFmpeg](https://ffmpeg.org/download.html)
 - Node.js
 - Express.js
 - React.js
