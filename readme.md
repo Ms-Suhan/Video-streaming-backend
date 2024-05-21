@@ -1,4 +1,4 @@
-# Welcomet to the video streaming app
+# Welcome to the video streaming app - Prototype
 
 ## This is a simple video streaming app that allows you to upload and watch videos.
 
@@ -33,13 +33,65 @@
     ├── package.json
     └── readme.md
 
+    
+## Live Streaming
+
+Live streaming refers to transmitting video content over the internet in real-time. Unlike regular streaming where videos are prerecorded, live streaming captures and broadcasts video as it happens. Think of it as the difference between a pre-recorded lecture and a live presentation.
+
+Here's a breakdown of live streaming technology:
+
+## Behind the Scenes
+
+ - Video Capture: The process starts with capturing raw video data using a camera. This visual information is converted into digital data (1s and 0s).
+
+ - Compression and Encoding:
+
+    - Compression: Reduces redundant data. For example, if the background remains unchanged in consecutive frames, it only needs to be encoded once.
+    - Encoding: Converts the data into a format compatible with various devices (e.g., H.264, H.265).
+ - Segmentation: The video is chopped into short segments (a few seconds each) for efficient transmission.
+
+ - CDN Distribution and Caching:
+
+    - CDN (Content Delivery Network): A network of geographically distributed servers that cache and deliver content.
+    - Distribution: The CDN distributes the segmented video to viewers. Users' requests are directed to nearby CDN servers for faster performance compared to the origin server (where the stream originates).
+    - Caching: CDN servers temporarily store (cache) video segments, reducing latency for viewers by delivering data from the cache instead of the origin server.
+ - Decoding and Playback:
+
+    - Users' devices receive, decode, and decompress the video segments.
+    - Media players on the devices interpret the data and display the video.
+
+
+### Example: Alice's Live Stream
+
+Imagine Alice starts a live stream on her smartphone, and viewers like Bob across the country tune in. Here's what happens:
+
+Alice's phone captures a video segment (e.g., her saying "Hello, world!").
+The segment is compressed and encoded.
+The encoded data is sent to the CDN.
+Bob's phone, located near a CDN server, requests the video segment.
+The CDN server delivers the cached segment to Bob's phone.
+Bob's phone decodes the data and displays the video.
+Why CDNs are Important for Live Streaming
+
+Bandwidth Management: CDNs prevent choke points (slowdowns) on the origin server's network by distributing the streaming load.
+Global Content Delivery: CDNs ensure smooth delivery worldwide by having servers closer to viewers.
+Reduced Latency: Delivering content from nearby CDN servers reduces round-trip time (RTT) and latency for viewers.
+Workload Distribution: CDNs share the workload of serving video data, reducing strain on the origin server.
+Caching: CDN caching minimizes latency by delivering data from the cache instead of the origin server, even though it introduces a slight delay.
+In essence, CDNs are crucial for live streaming by ensuring efficient, high-quality video delivery to a global audience with minimal lag.
+    
+
 ## HTTP Live Streaming (HLS)
  - HLS, or HTTP Live Streaming, is a widely used protocol for delivering video and audio streams over the internet. It functions for both live and on-demand streaming scenarios.
+
+   
 
 ## Advantages of HLS
  - Broad Device Compatibility: Since HLS leverages HTTP, inherently compatible with most devices. This simplifies implementation compared to protocols requiring specialized servers.
  - Adaptive Bitrate Streaming: HLS can adjust video quality based on network conditions, ensuring uninterrupted playback even with fluctuating bandwidth. This is why video quality can change mid-stream.
- - 
+
+
+   
 #### How HLS Works
 
 ### Server-side Processing
