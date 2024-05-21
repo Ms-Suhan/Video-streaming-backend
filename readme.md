@@ -14,7 +14,7 @@
 
 
 [!File Structure Tree]
-...
+...bash
 .
 └── video-streaming-backend/
     ├── frontend/
