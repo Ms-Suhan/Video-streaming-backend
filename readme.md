@@ -1,6 +1,6 @@
 # Welcomet to the video streaming app
 
-## This is a simple video streaming app that allows you to upload and watch videos.
+### This is a simple video streaming app that allows you to upload and watch videos.
 
 ### Features:
 - Upload videos
@@ -13,7 +13,7 @@
 - React.js
 
 
-#### File Structure Tree:
+## File Structure Tree:
 
 
 
