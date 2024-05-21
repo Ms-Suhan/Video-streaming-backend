@@ -13,10 +13,12 @@
 - React.js
 
 
-[!File Structure Tree]
-...bash
-.
-└── video-streaming-backend/
+#### File Structure Tree:
+
+
+
+|── video-streaming-backend/
+
     ├── frontend/
     │   ├── public
     │   └── src/
@@ -32,4 +34,3 @@
     └── readme.md
 
 
-...
