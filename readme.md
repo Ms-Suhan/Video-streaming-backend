@@ -1,6 +1,6 @@
 # Welcome to the video streaming app - Prototype
 
-## This is a simple video streaming app that allows you to upload and watch videos.
+ > This is a simple video streaming app that allows you to upload and watch videos.
 
 ## Features:
 - Upload videos
@@ -17,21 +17,20 @@
 
 
 
-|── video-streaming-backend/
-
-    ├── frontend/
-    │   ├── public
-    │   └── src/
-    │       ├── assets
-    │       ├── App.jsx
-    │       ├── main.jsx
-    │       ├── App.css
-    │       └── VideoPlayer.jsx
-    ├── uplaods/
-    │   └── courses
-    ├── index.js
-    ├── package.json
-    └── readme.md
+    |── video-streaming-backend/
+        ├── frontend/
+        │   ├── public
+        │   └── src/
+        │       ├── assets
+        │       ├── App.jsx
+        │       ├── main.jsx
+        │       ├── App.css
+        │       └── VideoPlayer.jsx
+        ├── uplaods/
+        │   └── courses
+        ├── index.js
+        ├── package.json
+        └── readme.md
 
 
 
@@ -43,15 +42,15 @@ The application facilitates users to stream videos on demand.
 
 # Technologies Used
 
-### Backend:
- - **FFmpeg:** Open-source command-line tool for video processing tasks like encoding and transcoding.
- - **Node.js:** JavaScript runtime environment enabling server-side scripting.
- - **Express.js:** Web application framework built on top of Node.js for creating APIs.
+ ### Backend:
+  - **FFmpeg:** Open-source command-line tool for video processing tasks like encoding and transcoding.
+  - **Node.js:** JavaScript runtime environment enabling server-side scripting.
+  - **Express.js:** Web application framework built on top of Node.js for creating APIs.
 
-### Frontend:
+ ### Frontend:
 
- - **React.js:** JavaScript library for building dynamic user interfaces.
- - **Video.js:** Open-source HTML5 video player library.
+  - **React.js:** JavaScript library for building dynamic user interfaces.
+  - **Video.js:** Open-source HTML5 video player library.
 
 ---
 
@@ -130,9 +129,13 @@ The application facilitates users to stream videos on demand.
   - **Cloud Hosting:** Utilize platforms like Heroku or AWS to host the Node.js server and potentially configure a Content Delivery Network (CDN) for efficient video delivery.
   - **Static Hosting:** For a simpler application, consider static hosting services like Netlify or Vercel for the React.js frontend.
 
-  This section provides a high-level overview of developing a video streaming application using FFmpeg, Node.js, Express.js, React.js, and Video.js.
+  This section provides a high-level overview of developing a video streaming application using FFmpeg, Node.js, Express.js, React.js, and Video.
+
+  
 
 ---
+
+
     
 # Live Streaming
 
