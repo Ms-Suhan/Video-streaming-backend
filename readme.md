@@ -13,7 +13,7 @@
 - React.js
 
 
-## File Structure Tree:
+# File Structure Tree:
 
 
 
@@ -38,18 +38,22 @@
 This document outlines the development of a video streaming application utilizing various technologies. 
 The application facilitates users to stream videos on demand.
 
+------------------------------------------------------------------------------------------------------
 
-## Technologies Used
 
-Backend:
+# Technologies Used
+
+### Backend:
  - **FFmpeg:** Open-source command-line tool for video processing tasks like encoding and transcoding.
  - **Node.js:** JavaScript runtime environment enabling server-side scripting.
  - **Express.js:** Web application framework built on top of Node.js for creating APIs.
 
-Frontend:
+### Frontend:
 
  - **React.js:** JavaScript library for building dynamic user interfaces.
  - **Video.js:** Open-source HTML5 video player library.
+
+---
 
 
 | Table of Contents                |
@@ -62,7 +66,8 @@ Frontend:
 |    3.1 React.js Application|
 |    3.2 Video.js Integration|
 
-## 
+
+
 ## **1. System Architecture**
 
  The video streaming application adheres to a client-server architecture. The client-side, built with React.js and Video.js, 
@@ -70,18 +75,21 @@ Frontend:
  The server-side, powered by Node.js and Express.js, manages video storage, retrieval, and potentially user authentication depending on the application's 
  specific functionalities. FFmpeg acts as an external tool for processing video files on the server.
  
- ## 
+ ---
 
-**2. Backend Development**
+## **2. Backend Development**
 
-  - **2.1 FFmpeg Integration**
+  - **2.1: FFmpeg Integration**
 
     FFmpeg plays a crucial role in preparing videos for efficient streaming. You can leverage FFmpeg to:
 
     **Transcode Videos:** Convert video files to formats compatible with web browsers and mobile devices. This ensures smooth video playback across different platforms.
     Generate Adaptive Bitrate Streams: Create multiple versions of a video with varying bitrates (quality levels). The server can then deliver the most suitable version 
     based on the user's internet connection speed.
-  - **2.2 Node.js and Express.js Server**
+
+    ---
+    
+  - **2.2: Node.js and Express.js Server**
 
     The Node.js server built with Express.js acts as the central hub for handling user requests and video delivery. Key functionalities include:
 
@@ -92,11 +100,11 @@ Frontend:
     **User Authentication (Optional):** If user accounts are part of the application, implement functionalities for user registration, login, 
     and potentially managing subscriptions or watch history.
 
+---
 
+## **3. Frontend Development**
 
-**3. Frontend Development**
-
- - **3.1 React.js Application**
+ - **3.1: React.js Application**
 
     React.js is used to build the interactive user interface of the video streaming application. This involves:
 
@@ -105,14 +113,17 @@ Frontend:
     Redux (depending on complexity).
     API Interaction: Implement logic to interact with the backend APIs for functionalities like video browsing, playback requests, and potentially user account management.
 
- - **3.2 Video.js Integration**
+   ---
+
+ - **3.2: Video.js Integration**
 
     **Video.js** provides a customizable HTML5 video player library. Here's how it can be integrated:
 
     **Video Player Component:** Create a React component using Video.js to display the video player and handle playback controls.
     **Video Source:** Set the video source dynamically based on the selected video and the server response indicating the appropriate video stream URL.
+---
 
-**4. Deployment (Optional)**
+## **4. Deployment (Optional)**
 
  This section can be elaborated on if your assignment involves deploying the application to a live environment.  Here are some potential considerations:
 
@@ -121,6 +132,7 @@ Frontend:
 
   This section provides a high-level overview of developing a video streaming application using FFmpeg, Node.js, Express.js, React.js, and Video.js.
 
+---
     
 # Live Streaming
 
